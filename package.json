@@ -1,0 +1,16 @@
+{
+  "name": "asincronimo",
+  "version": "1.0.0",
+  "description": "trabajar con asincronimo en JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/index.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async"
+  ],
+  "author": "Jesus  Villalba",
+  "license": "ISC"
+}
