@@ -1,18 +1,16 @@
-const { rejects } = require("assert")
-const { resolve } = require("path/posix")
-
 const algoSucedera = () => {
   return new Promise((resolve, reject) => {
     if (true) {
       resolve('Hey!');
-    } else {
-      const error = new Error('No se cumplio');
-      reject(error);
+      return;
     }
+    const error = new Error('No se cumplio');
+    reject(error);
   });
 }
 
 const algoSucedera2 = () => {
+  // Parametros resolver o rechazar
   return new Promise((resolve, reject) => {
     if (true) {
       setTimeout(
