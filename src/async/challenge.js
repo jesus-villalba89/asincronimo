@@ -3,7 +3,7 @@ const API = 'https://rickandmortyapi.com/api/character/';
 
 const anotherFunction = async (url_api) => {
   try {
-    const data =  fetchData(url_api);
+    const data = await fetchData(url_api);
     //const character = await fetchData(url_api + data.result[0].id);
     const character = await fetchData(`${API}${data.results[0].id}`);
     const origin = await fetchData(character.origin.url);
